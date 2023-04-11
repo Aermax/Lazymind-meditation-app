@@ -109,7 +109,7 @@ const Comment = ({id}) => {
     },[])
 
   return (
-    <div>
+    <div className='allComments'>
         <h1 style={{marginLeft:"20%"}}>Reviews</h1>
     {
         

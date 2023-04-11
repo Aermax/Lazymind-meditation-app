@@ -208,9 +208,11 @@ const Session = () => {
                 <p>{name}</p>
                 <Button aria-label="Delete" onClick={()=>{liked ? 
                     removeFavourite(likedId): 
-                    addFavourite()}} 
+                    addFavourite()}}
+                    className='likeButton' 
                     sx={liked ? 
                     {color:'#C13584',
+                    paddingRight:0,
                 } : 
                     {color:'black'}
                 }
@@ -270,7 +272,7 @@ const Session = () => {
             <Comment id={id}/>
         </div>
         
-                <div className="flex-second">
+                <div className="flex-second flex-list">
                     <h3>Related</h3>
                    { listCards.map(({name,_id,photo})=>{
                     return (

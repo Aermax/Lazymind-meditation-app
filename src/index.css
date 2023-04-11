@@ -337,7 +337,11 @@ to{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('/images/bg.jpg');
+
+    background: linear-gradient(
+        #6190e8
+        ,
+        #a7bfe8);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -492,6 +496,11 @@ div.inputCard {
     
 }
 
+.likeButton {
+    position: absolute;
+    right: 0;
+}
+
 @media screen and (max-width:1000px) {
     .card-grid {
         grid-template-columns: auto auto;
@@ -505,6 +514,7 @@ div.inputCard {
 @media screen and (max-width:700px) {
     .card-grid {
         grid-template-columns: auto;
+        margin-left: 20px;
     }
     .col-title {
         margin-left: 20px;
@@ -517,19 +527,45 @@ div.inputCard {
     }
 
     .music-div {
-        width: 10rem;
+        width: 14rem;
+        top:15rem;
+        height:12rem;
+        
+    }
+
+    .session .icon-div {
+        position: relative;
+        top: 0;
     }
 
     .music-div > * {
-        width:10rem;
+        width:13rem;
         top: 2rem;
+    }
+
+    .progress-container {
+        width: 14rem;
     }
 
     .flex-layout {
         display: block;
     }
 
-    .flex-second {
-        display: block;
+    
+
+    .flex-list {
+        position: relative;
+      
+        margin-left: 2rem;
+        
+    }
+
+    .list-card {
+        width: 20rem;
+    }
+
+    .allComments {
+        margin-right: 180px;
+
     }
 }
