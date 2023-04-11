@@ -337,7 +337,7 @@ to{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('/images/bg2.jpg');
+    background-image: url('/images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -14,10 +14,10 @@ const ListCard = ({name, id, photo}) => {
     return (
 
         <>
-         <div  className="list-card card" onClick={handleNavigate}>
+         <a   className="list-card card" href={"/session/" + id}>
             <img src={photo} alt="cover" />
             <p>{name}</p>
-        </div>
+        </a>
         </>
         
     )
